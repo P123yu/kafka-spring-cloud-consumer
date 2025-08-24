@@ -1,0 +1,29 @@
+server:
+  port: 8082
+
+spring:
+  cloud:
+    function:
+      definition: consume
+
+    stream:
+      bindings:
+        consume-in-0:
+          destination: pk-produce   # topic name
+
+
+    kafka:
+      binder:
+        brokers: localhost:9092
+
+
+
+
+
+
+
+
+
+
+
+
