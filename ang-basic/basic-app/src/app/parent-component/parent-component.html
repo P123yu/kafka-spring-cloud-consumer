@@ -1,0 +1,6 @@
+<p>parent-component works!</p>
+<app-child-component
+  [childMessage]="parentData"
+  (messageEvent)="receiveMessage($event)"
+></app-child-component>
+<p>Reply from Child: {{ reply }}</p>
